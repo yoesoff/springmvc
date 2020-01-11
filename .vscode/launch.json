@@ -19,7 +19,7 @@
             "type": "java",
             "name": "America - SpringMVC",
             "request": "launch",
-            "projectName": "SpringMVC01",
+            "projectName": "springmvc",
             "mainClass": "guru.springframework.springmvc.SpringmvcApplication",
             "args": "--spring.profiles.active=amerika"
         }

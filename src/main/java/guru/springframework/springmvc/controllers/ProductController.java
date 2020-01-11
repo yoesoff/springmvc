@@ -25,5 +25,4 @@ public class ProductController {
         model.addAttribute("products", productService.listAllProducts());
         return "products";
     }
-    
 }

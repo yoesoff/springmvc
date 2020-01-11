@@ -12,7 +12,21 @@
     <body>
         <div class="container">
             <h1>Product List</h1>
-            <h2>This is thymeleaf index page.</h2>
+            <table border="2">
+                <tr>
+                    <th>Id</th>
+                    <th>Desc</th>
+                    <th>Price</th>
+                    <th>Image Url</th>
+                </tr>
+                <tr th:each="product: ${products}">
+                    <td th:text="${product.id}"></td>
+                    <td th:text="${product.description}"></td>
+                    <td th:text="${product.price}"></td>
+                    <td th:text="${product.imageUrl}"></td>
+                </tr>   
+            </table>
+
         </div>
     </body>
 </html>

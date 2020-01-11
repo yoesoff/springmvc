@@ -18,6 +18,10 @@ public class ProductServiceImpl implements ProductService {
 
     private Map<Integer, Product> product;
 
+    public ProductServiceImpl() {
+        loadProducts();
+    }
+
     @Override
     public List<Product> listAllProducts() {
         return new ArrayList<>(product.values());
@@ -38,5 +42,4 @@ public class ProductServiceImpl implements ProductService {
         Product product4 = new Product(4, "Product 4 lorem ipsum", new BigDecimal("22"), "http://example.com/product4");
         product.put(4, product4);
     }
-
 }
