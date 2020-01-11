@@ -7,9 +7,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * IndexController
  */
 @Controller
-public class IndexController    {
+public class IndexController {
     @RequestMapping("/")
-    public String index(){
+    public String index()   
+    {
         //Thymeleaf auto cari index.html
         return "index";
     }
