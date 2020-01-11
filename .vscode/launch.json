@@ -1,0 +1,27 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Prod - SpringMVC",
+            "request": "launch",
+            "projectName": "springmvc",
+            "mainClass": "guru.springframework.springmvc.SpringmvcApplication"
+        },
+        {
+            "type": "java",
+            "name": "local - SpringMVC",
+            "request": "launch",
+            "projectName": "springmvc",
+            "mainClass": "guru.springframework.springmvc.SpringmvcApplication",
+            "args": "--spring.pro,files.active=local"
+        },
+        {
+            "type": "java",
+            "name": "America - SpringMVC",
+            "request": "launch",
+            "projectName": "SpringMVC01",
+            "mainClass": "guru.springframework.springmvc.SpringmvcApplication",
+            "args": "--spring.profiles.active=amerika"
+        }
+    ]
+  }
