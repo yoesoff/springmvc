@@ -25,10 +25,12 @@
                 <td th:text="${product.description}"></td>
                 <td th:text="${product.price}"></td>
                 <td th:text="${product.imageUrl}"></td>
-                <td><a th:href="${'/products/' + product.id}">view</a></td>
+                <td>
+                    <a th:href="${'/products/' + product.id}">view</a> | <a th:href="${'/products/' + product.id}">update</a> | <a th:href="${'/products/' + product.id}">delete</a> 
+                </td>
             </tr>   
         </table>
-
+        <a href="/products">list</a>
     </div>
 </body>
 </html>
