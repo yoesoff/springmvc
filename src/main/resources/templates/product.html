@@ -11,7 +11,7 @@
     </head>
 <body>
     <div class="container">
-        <h1>Product List</h1>
+        <h1>Show Product</h1>
         <table border="2">
             <tr>
                 <th>Id</th>
@@ -20,7 +20,7 @@
                 <th>Image Url</th>
                 <th>View</th>
             </tr>
-            <tr th:each="product: ${products}">
+            <tr>
                 <td th:text="${product.id}"></td>
                 <td th:text="${product.description}"></td>
                 <td th:text="${product.price}"></td>
