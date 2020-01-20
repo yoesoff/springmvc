@@ -17,7 +17,7 @@ import guru.springframework.springmvc.domain.Product;
 @Service
 public class ProductServiceImpl implements ProductService {
 
-    private Map<Integer, Product> products;
+    private Map<Integer, Product> products = new HashMap<>();
 
     public ProductServiceImpl() {
         loadProducts();
@@ -59,7 +59,6 @@ public class ProductServiceImpl implements ProductService {
     }      
     
     public void loadProducts() {
-        products = new HashMap<>();
 
         Product product1 = new Product(1, "Product 1 lorem ipsum", new BigDecimal("22"), "lorem");
         products.put(1, product1);
