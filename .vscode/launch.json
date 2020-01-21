@@ -13,7 +13,7 @@
             "request": "launch",
             "projectName": "springmvc",
             "mainClass": "guru.springframework.springmvc.SpringmvcApplication",
-            "args": "--spring.pro,files.active=local"
+            "args": "--spring.profiles.active=local"
         },
         {
             "type": "java",
